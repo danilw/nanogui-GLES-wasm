@@ -1,4 +1,4 @@
-# nanogui_GLES_wasm
+# nanogui GLES wasm
 **what is it** this if fork of [nanogui](https://github.com/wjakob/nanogui) modified for WASM and GLES
 
 **live demo** [link](https://danilw.github.io/GLSL-howto/nanogui/nanogui.html)
