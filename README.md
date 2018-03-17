@@ -16,11 +16,11 @@ $ em++ -DNANOVG_GLES3_IMPLEMENTATION -DGLFW_INCLUDE_ES3 -DGLFW_INCLUDE_GLEXT -DN
 ```
 
 **Problems**
- - std::thread (pthread) support in wasm disabled [check this](https://www.mail-archive.com/emscripten-discuss@googlegroups.com/msg07008.html) *read more at end*
+ - std::thread (pthread) support in wasm disabled [check this](https://www.mail-archive.com/emscripten-discuss@googlegroups.com/msg07008.html)
  - asserts in wasm does not fit C asserts
  - glGetError() has too much errors, better skip checking
  - exceptions to build with -s DISABLE_EXCEPTION_CATCHING=2
 
-*nanogui can be builded in wasm with pthreads -s USE_PTHREADS=2 -s PTHREAD_POOL_SIZE=10
+**pthread** *nanogui can be builded in wasm with pthreads -s USE_PTHREADS=2 -s PTHREAD_POOL_SIZE=10
 need to remove while(true) loop from threads (common.cpp line 79) 
 building with pthread give you (much)less FPS and 100% processor usage, to launch it you need use old browser like firefox 57*
