@@ -413,15 +413,14 @@ void GLFramebuffer::release() {
 }
 
 void GLFramebuffer::blit() {
-    /*glBindFramebuffer(GL_READ_FRAMEBUFFER, mFramebuffer);
+    glBindFramebuffer(GL_READ_FRAMEBUFFER, mFramebuffer);
     glBindFramebuffer(GL_DRAW_FRAMEBUFFER, 0);
-    glDrawBuffer(GL_BACK);
+    //glDrawBuffer(GL_BACK);
 
     glBlitFramebuffer(0, 0, mSize.x(), mSize.y(), 0, 0, mSize.x(), mSize.y(),
                       GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT, GL_NEAREST);
 
-    glBindFramebuffer(GL_FRAMEBUFFER, 0);*/
-    throw std::runtime_error("GLFramebuffer::blit(): Unimplemented for GLES!");
+    glBindFramebuffer(GL_FRAMEBUFFER, 0);
 }
 
 void GLFramebuffer::downloadTGA(const std::string &filename) {
