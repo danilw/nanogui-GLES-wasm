@@ -16,7 +16,7 @@ $ em++ -DNANOVG_GLES3_IMPLEMENTATION -DGLFW_INCLUDE_ES3 -DGLFW_INCLUDE_GLEXT -DN
 ```
 
 **Problems**
- - *WARNING* I found problem with lambda in WASM, I think it work same way like in Java, in Java "local variables referenced from a lambda expression must be final or effectively final", I mean using any **setCallback** method you need make all variables Global (include object that call setCallback) or you can not call "callback" from other classes/functions (outside of creation function)
+ - *WARNING* I found problem with lambda in WASM, I think it work same way like in Java, in Java "*local variables referenced from a lambda expression must be final or effectively final*", I mean using any **setCallback** method you need make all variables Global (include object that call setCallback) or you can not call "callback" from other classes/functions (outside of creation function)
  - std::thread (pthread) support in wasm disabled [check this](https://www.mail-archive.com/emscripten-discuss@googlegroups.com/msg07008.html)
  - asserts in wasm does not fit C asserts
  - glGetError() has too much errors, better skip checking
