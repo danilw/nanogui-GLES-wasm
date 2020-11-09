@@ -1,3 +1,5 @@
+# This is archived, and not supported! If you look for updates look on other forks example [github.com/AE1020](https://github.com/AE1020/nanogui-GLES-wasm) or make your own repository with all updates you need.
+
 # nanogui GLES wasm
 **what is it** this is fork of [nanogui](https://github.com/wjakob/nanogui) modified for WASM and GLES (*nanovg* and *nanogui* source files modified)
 
